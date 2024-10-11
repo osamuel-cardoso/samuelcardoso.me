@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply font-text h-full 
+}
+
+@media (min-width: 1600px) {
+  html { font-size: 96.25%;}
+}
+
+body {
+  @apply h-full
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply tracking-tight
+}
+
+p, strong, span {
+  @apply tracking-tight
+}
+
+@layer utilities {
+  .flex-x {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex-y {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
