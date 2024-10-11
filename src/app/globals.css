@@ -10,6 +10,16 @@ html {
   html { font-size: 96.25%;}
 }
 
+@media (min-width: 1366px) and (max-width: 1440px) {
+  html { font-size: 92%;}
+}
+
+@media (min-width: 1080px) and (max-width: 1366px) {
+  html { font-size: 88%;}
+}
+
+
+
 body {
   @apply h-full
 }
