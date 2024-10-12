@@ -8,7 +8,7 @@ export function Article({ src }: { src: StaticImageData | string }) {
                     2024
                 </span>
 
-                <div className="h-72 w-full overflow-hidden rounded-[.5625rem] md:h-[21rem]">
+                <div className="h-60 w-full overflow-hidden rounded-[.5625rem] md:h-[21rem]">
                     <Image
                         src={src}
                         className="h-full w-full bg-neutral-975 object-cover"
