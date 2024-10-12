@@ -4,7 +4,7 @@ import profileImage from '@/images/profile.png'
 
 export function Header() {
     return (
-        <header className="flex items-center justify-between">
+        <header className="flex justify-between md:items-center">
             <div className="flex items-center gap-4">
                 <Image
                     src={profileImage}
@@ -22,7 +22,7 @@ export function Header() {
                 </div>
             </div>
 
-            <div className="flex items-center gap-2">
+            <div className="hidden items-center gap-2 md:flex">
                 <span className="text-[.8125rem] leading-none text-neutral-400">
                     Disponível para projetos
                 </span>

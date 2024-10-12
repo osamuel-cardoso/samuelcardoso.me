@@ -4,7 +4,7 @@ export function Article({ src }: { src: StaticImageData | string }) {
     return (
         <article className="flex w-full flex-col gap-4">
             <div className="flex-x items-start gap-3">
-                <span className="rounded-full bg-neutral-1000 px-[.5625rem] py-1 font-display text-[.8125rem] font-medium leading-none text-neutral-25 transition hover:bg-neutral-1000 hover:text-neutral-25 dark:bg-neutral-25 dark:text-neutral-1000">
+                <span className="rounded-full bg-neutral-1000 px-[.5625rem] py-1 pt-[.375rem] font-display text-[.8125rem] font-medium leading-none text-neutral-25 transition hover:bg-neutral-1000 hover:text-neutral-25 dark:bg-neutral-25 dark:text-neutral-1000">
                     2024
                 </span>
 

@@ -1,6 +1,6 @@
 export function Details() {
     return (
-        <div className="font-text text-[1.0625rem] leading-[140%]">
+        <div className="font-text text-[.9375rem] leading-[140%] md:text-[1.0625rem]">
             <div className="flex gap-3">
                 <span>13:12</span>
                 <span>7° 6′ 55″, 34° 51′ 40″</span>

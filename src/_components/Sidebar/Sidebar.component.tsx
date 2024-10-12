@@ -39,7 +39,7 @@ const contacts = [
 
 export default function Sidebar() {
     return (
-        <aside className="flex h-full flex-col justify-between rounded-[.5625rem] bg-neutral-50 p-4 dark:bg-neutral-975">
+        <aside className="flex h-full flex-col justify-between gap-8 rounded-[.5625rem] bg-neutral-50 p-3 md:gap-12 md:p-4 dark:bg-neutral-975">
             <div className="flex flex-col gap-10">
                 <Header />
                 <Details />
@@ -49,7 +49,7 @@ export default function Sidebar() {
                         Sobre mim
                     </span>
                     <div className="rounded-[.5625rem] bg-neutral-75 p-3 dark:bg-neutral-950">
-                        <p className="text-[1.0625rem] text-neutral-900 dark:text-neutral-200">
+                        <p className="text-[.9375rem] text-neutral-900 md:text-[1.0625rem] dark:text-neutral-200">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. Aliquam vel rhoncus tellus, quis facilisis
                             nunc. Quisque viverra dictum nulla, ut luctus ante
@@ -62,7 +62,7 @@ export default function Sidebar() {
                     {skills.map((content, i) => {
                         return (
                             <div
-                                className="justify-between rounded-full bg-neutral-75 px-[.5625rem] py-[.4375rem] text-[.9375rem] leading-none text-neutral-500 dark:bg-neutral-950 dark:text-neutral-200"
+                                className="justify-between rounded-full bg-neutral-75 px-[.5625rem] py-[.4375rem] text-[.8125rem] leading-none text-neutral-500 md:text-[.9375rem] dark:bg-neutral-950 dark:text-neutral-200"
                                 key={i}
                             >
                                 <span>{content}</span>
@@ -79,10 +79,10 @@ export default function Sidebar() {
                         {expertise.map(({ place, time }, i) => {
                             return (
                                 <div className="flex justify-between" key={i}>
-                                    <span className="text-[.9375rem] text-neutral-900 dark:text-neutral-200">
+                                    <span className="text-[.8125rem] text-neutral-900 md:text-[.9375rem] dark:text-neutral-200">
                                         {place}
                                     </span>
-                                    <span className="text-[.9375rem] text-neutral-400">
+                                    <span className="text-[.8125rem] text-neutral-400 md:text-[.9375rem]">
                                         {time}
                                     </span>
                                 </div>
@@ -111,7 +111,7 @@ export default function Sidebar() {
                 </div>
             </div>
 
-            <span className="font-text text-[1.0625rem] leading-[140%]">
+            <span className="font-text text-[.8125rem] leading-[140%] md:text-[1.0625rem]">
                 Atualmente em João Pessoa, Paraíba. 🇧🇷
             </span>
         </aside>
