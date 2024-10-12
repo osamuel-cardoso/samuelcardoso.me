@@ -111,7 +111,7 @@ export default function Sidebar() {
                 </div>
             </div>
 
-            <span className="font-text text-[.8125rem] leading-[140%] md:text-[1.0625rem]">
+            <span className="font-text text-[.8125rem] leading-[140%] md:text-[.9375rem]">
                 Atualmente em João Pessoa, Paraíba. 🇧🇷
             </span>
         </aside>
