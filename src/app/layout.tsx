@@ -2,6 +2,8 @@ import './globals.css'
 
 import type { Metadata } from 'next'
 
+import { ThemeContextProvider } from '@/contexts/ThemeContext'
+
 import { helveticaNowDisplay, helveticaNowText } from './fonts'
 
 export const metadata: Metadata = {
@@ -52,10 +54,12 @@ export default function RootLayout({
     children: React.ReactNode
 }>) {
     return (
-        <html
-            className={`${helveticaNowDisplay.variable} ${helveticaNowText.variable} bg-neutral-25 antialiased dark:bg-neutral-1000 dark:text-neutral-25`}
-        >
-            <body>{children}</body>
-        </html>
+        <ThemeContextProvider>
+            <html
+                className={`${helveticaNowDisplay.variable} ${helveticaNowText.variable} bg-neutral-25 antialiased dark:bg-neutral-1000 dark:text-neutral-25`}
+            >
+                <body>{children}</body>
+            </html>
+        </ThemeContextProvider>
     )
 }

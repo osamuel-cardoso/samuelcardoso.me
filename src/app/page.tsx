@@ -1,3 +1,4 @@
+import { ThemeToggle } from '@/_components/ThemeToggle.component'
 import Home from '@/ui/home/Home.component'
 
 export default async function Initial() {
@@ -9,5 +10,10 @@ export default async function Initial() {
 
     // console.log(delay)
 
-    return <Home />
+    return (
+        <>
+            <ThemeToggle />
+            <Home />
+        </>
+    )
 }
