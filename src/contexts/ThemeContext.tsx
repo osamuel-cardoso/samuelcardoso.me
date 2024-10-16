@@ -9,9 +9,9 @@ interface IThemeContext {
 
 export const ThemeContext = createContext({} as IThemeContext)
 
-function getFromLocalStorage() {
+function verifyThemeValue() {
     if (typeof window !== 'undefined') {
-        const value = localStorage.getItem('theme')
+        const value = window.localStorage.getItem('theme')
 
         if (!value) {
             const preferredTheme = window.matchMedia(
@@ -27,12 +27,13 @@ function getFromLocalStorage() {
 
 export function ThemeContextProvider({ children }: { children: ReactNode }) {
     const [theme, setTheme] = useState(() => {
-        return getFromLocalStorage()
+        return verifyThemeValue()
     })
 
     function handleSetTheme() {
         setTheme((theme) => (theme === 'light' ? 'dark' : 'light'))
         localStorage.setItem('theme', theme!)
+
         document.documentElement.classList.toggle('dark')
     }
 
